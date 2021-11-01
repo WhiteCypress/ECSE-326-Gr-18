@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 1, 2021 at 5:18:00 PM EDT" specVersion="117" urnVersion="1.27" nextGlobalID="4911">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 1, 2021 at 5:37:35 PM EDT" specVersion="118" urnVersion="1.27" nextGlobalID="4911">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="Use geolocation to locate services near you." id="4513" description="The feature &quot;Find services near me&quot; can utilize geolocation from the device used to access the application to quickly find recycling services near the individual. Geolocation is easy to use and quick for the user.">
@@ -369,7 +369,7 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="Find services near an individual" id="3">
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="Find services near an individual" id="3" description="The feature &quot;Services Near Me&quot; is used to find recycling services near an individual. This feature offers three ways to find these services: manually entering a postal code, scrolling on a map or using geolocation. This feature is important for the general public as it will allow them to quickly find recycling services near them.">
       <nodes xsi:type="ucm.map:StartPoint" name="An individual would like to find services near them" id="618" x="153" y="278" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
         <metadata name="_hits" value="1"/>
         <label/>
