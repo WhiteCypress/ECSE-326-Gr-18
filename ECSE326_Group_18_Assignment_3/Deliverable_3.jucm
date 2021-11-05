@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 4, 2021 at 6:41:51 PM EDT" specVersion="63" urnVersion="1.27" nextGlobalID="850">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 5, 2021 at 12:04:23 PM EDT" specVersion="68" urnVersion="1.27" nextGlobalID="859">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
@@ -47,20 +47,26 @@
     <intElements xsi:type="fm:Feature" name="Services Near Me" id="94" linksSrc="326 820" type="Task" refs="186 641">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Recycling Instructions" id="102" linksSrc="388 832 833" type="Task" refs="383 623">
+    <intElements xsi:type="fm:Feature" name="Recycling Instructions" id="102" linksSrc="388 833" type="Task" refs="383 623">
       <metadata name="_autoSelected" value="20211030-122828709"/>
+      <metadata name="_addAggregate" value="disable"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Point Reward System" id="116" linksSrc="580 824" type="Task" refs="184 654" selectable="true">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Collection Schedule" id="136" linksSrc="275 817" type="Task" refs="182 631"/>
-    <intElements xsi:type="fm:Feature" name="Business Hours" id="140" linksSrc="274 819" type="Task" refs="168 637"/>
+    <intElements xsi:type="fm:Feature" name="Collection Schedule" id="136" linksSrc="275 817" type="Task" refs="182 631">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Business Hours" id="140" linksSrc="274 819" type="Task" refs="168 637">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
     <intElements xsi:type="fm:Feature" name="Business Map" id="144" linksDest="213" linksSrc="559" type="Task" refs="175"/>
     <intElements xsi:type="fm:Feature" name="Drop Off Location" id="146" linksSrc="213 818" type="Task" refs="188 633">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Recycling Regulations" id="220" linksSrc="361 831" type="Task" refs="221 621">
+    <intElements xsi:type="fm:Feature" name="Recycling Regulations" id="220" linksSrc="361 854" type="Task" refs="221 853">
       <metadata name="_autoSelected" value="20211030-122828709"/>
+      <metadata name="_addAggregate" value="disable"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Report Generation" id="245" linksSrc="558" type="Task" refs="246"/>
     <intElements xsi:type="fm:Feature" name="Registration new" id="284" linksSrc="292" type="Task">
@@ -79,9 +85,12 @@
     <intElements xsi:type="fm:Feature" name="Feature376" id="376" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Feature382" id="382" type="Task"/>
     <intElements name="Keeping the people happy" id="588" linksDest="740 741" type="Goal" importance="High" importanceQuantitative="100" refs="589"/>
-    <intElements name="Conform provincial recycling regulations" id="602" linksDest="831 832" type="Goal" importance="High" importanceQuantitative="100" refs="603"/>
-    <intElements name="Make it easy for people to recyle" id="612" linksDest="817 818 819 820 834" linksSrc="740" type="Goal" refs="613"/>
-    <intElements name="Keeping the city clean" id="616" linksDest="822 823 833" linksSrc="741" type="Goal" refs="617"/>
+    <intElements name="Make it easy for people to recyle" id="612" linksDest="817 818 819 820 834" linksSrc="740" type="Goal" refs="613">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
+    <intElements name="Keeping the city clean" id="616" linksDest="822 823 833" linksSrc="741" type="Goal" refs="617">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
     <intElements name="Task620" id="620" type="Task"/>
     <intElements name="Task622" id="622" type="Task"/>
     <intElements name="Advertsing" id="628" type="Task"/>
@@ -90,8 +99,12 @@
     <intElements name="Bussiness Hours" id="636" type="Task"/>
     <intElements name="Task640" id="640" type="Task"/>
     <intElements name="Task646" id="646" type="Task"/>
-    <intElements name="Make people want to recycle" id="650" linksDest="824 825 826 843" linksSrc="822" type="Goal" refs="651"/>
-    <intElements name="Have many recycling services" id="656" linksDest="828 829 830" linksSrc="823" type="Goal" refs="657"/>
+    <intElements name="Make people want to recycle" id="650" linksDest="824 825 826 843" linksSrc="822" type="Goal" refs="651">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
+    <intElements name="Have many recycling services" id="656" linksDest="828 829 830 854" linksSrc="823" type="Goal" refs="657">
+      <metadata name="_addAggregate" value="disable"/>
+    </intElements>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory199" id="199" refs="//@urndef/@specDiagrams.1/@connections.0" dest="15" src="23" quantitativeContribution="50"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory201" id="201" refs="//@urndef/@specDiagrams.1/@connections.1" dest="15" src="25" quantitativeContribution="50"/>
     <links xsi:type="fm:OptionalFMLink" name="Optional213" id="213" refs="//@urndef/@specDiagrams.1/@connections.2" dest="144" src="146" quantitativeContribution="100"/>
@@ -118,7 +131,7 @@
     <links xsi:type="grl:Contribution" name="Contribution740" id="740" refs="//@urndef/@specDiagrams.0/@connections.0" dest="588" src="612" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution741" id="741" refs="//@urndef/@specDiagrams.0/@connections.1" dest="588" src="616" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution817" id="817" refs="//@urndef/@specDiagrams.0/@connections.2" dest="612" src="136" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution818" id="818" refs="//@urndef/@specDiagrams.0/@connections.3" dest="612" src="146" contribution="SomeNegative" quantitativeContribution="-50"/>
+    <links xsi:type="grl:Contribution" name="Contribution818" id="818" refs="//@urndef/@specDiagrams.0/@connections.3" dest="612" src="146" contribution="Hurt" quantitativeContribution="-25"/>
     <links xsi:type="grl:Contribution" name="Contribution819" id="819" refs="//@urndef/@specDiagrams.0/@connections.4" dest="612" src="140" contribution="Hurt" quantitativeContribution="-10"/>
     <links xsi:type="grl:Contribution" name="Contribution820" id="820" refs="//@urndef/@specDiagrams.0/@connections.5" dest="612" src="94" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution822" id="822" refs="//@urndef/@specDiagrams.0/@connections.6" dest="616" src="650" contribution="Make" quantitativeContribution="100"/>
@@ -129,11 +142,10 @@
     <links xsi:type="grl:Contribution" name="Contribution828" id="828" refs="//@urndef/@specDiagrams.0/@connections.11" dest="656" src="92" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution829" id="829" refs="//@urndef/@specDiagrams.0/@connections.12" dest="656" src="306" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution830" id="830" refs="//@urndef/@specDiagrams.0/@connections.13" dest="656" src="310" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution831" id="831" refs="//@urndef/@specDiagrams.0/@connections.14" dest="602" src="220" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution832" id="832" refs="//@urndef/@specDiagrams.0/@connections.15" dest="602" src="102" contribution="SomePositive" quantitativeContribution="75"/>
-    <links xsi:type="grl:Contribution" name="Contribution833" id="833" refs="//@urndef/@specDiagrams.0/@connections.16" dest="616" src="102" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution834" id="834" refs="//@urndef/@specDiagrams.0/@connections.17" dest="612" src="92" contribution="SomeNegative" quantitativeContribution="-75"/>
-    <links xsi:type="grl:Contribution" name="Contribution843" id="843" refs="//@urndef/@specDiagrams.0/@connections.18" dest="650" src="72" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution833" id="833" refs="//@urndef/@specDiagrams.0/@connections.14" dest="616" src="102" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution834" id="834" refs="//@urndef/@specDiagrams.0/@connections.15" dest="612" src="92" contribution="Hurt" quantitativeContribution="-25"/>
+    <links xsi:type="grl:Contribution" name="Contribution843" id="843" refs="//@urndef/@specDiagrams.0/@connections.16" dest="650" src="72" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution854" id="854" refs="//@urndef/@specDiagrams.0/@connections.17" dest="656" src="220" contribution="SomeNegative" quantitativeContribution="-75"/>
     <groups name="StrategiesGroup5" id="5" strategies="6 584 585"/>
     <strategies name="L" id="6" author="s5294" group="5">
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="39">
@@ -226,23 +238,15 @@
         <metadata name="_height" value="60"/>
         <metadata name="_width" value="172"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef603" id="603" x="1592" y="240" pred="//@urndef/@specDiagrams.0/@connections.14 //@urndef/@specDiagrams.0/@connections.15" def="602">
-        <metadata name="_height" value="68"/>
-        <metadata name="_width" value="274"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef613" id="613" x="334" y="385" succ="//@urndef/@specDiagrams.0/@connections.0" pred="//@urndef/@specDiagrams.0/@connections.2 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.5 //@urndef/@specDiagrams.0/@connections.17" def="612">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef613" id="613" x="334" y="385" succ="//@urndef/@specDiagrams.0/@connections.0" pred="//@urndef/@specDiagrams.0/@connections.2 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.5 //@urndef/@specDiagrams.0/@connections.15" def="612">
         <metadata name="_height" value="71"/>
         <metadata name="_width" value="137"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef617" id="617" x="1145" y="406" succ="//@urndef/@specDiagrams.0/@connections.1" pred="//@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.7 //@urndef/@specDiagrams.0/@connections.16" def="616">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef617" id="617" x="1145" y="406" succ="//@urndef/@specDiagrams.0/@connections.1" pred="//@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.7 //@urndef/@specDiagrams.0/@connections.14" def="616">
         <metadata name="_height" value="65"/>
         <metadata name="_width" value="135"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef621" id="621" x="1525" y="386" succ="//@urndef/@specDiagrams.0/@connections.14" def="220">
-        <metadata name="_height" value="45"/>
-        <metadata name="_width" value="110"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef623" id="623" x="1813" y="376" succ="//@urndef/@specDiagrams.0/@connections.15 //@urndef/@specDiagrams.0/@connections.16" def="102">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef623" id="623" x="1717" y="424" succ="//@urndef/@specDiagrams.0/@connections.14" def="102">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
@@ -266,7 +270,7 @@
         <metadata name="_height" value="60"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef651" id="651" x="873" y="580" succ="//@urndef/@specDiagrams.0/@connections.6" pred="//@urndef/@specDiagrams.0/@connections.8 //@urndef/@specDiagrams.0/@connections.9 //@urndef/@specDiagrams.0/@connections.10 //@urndef/@specDiagrams.0/@connections.18" def="650">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef651" id="651" x="873" y="580" succ="//@urndef/@specDiagrams.0/@connections.6" pred="//@urndef/@specDiagrams.0/@connections.8 //@urndef/@specDiagrams.0/@connections.9 //@urndef/@specDiagrams.0/@connections.10 //@urndef/@specDiagrams.0/@connections.16" def="650">
         <metadata name="_height" value="65"/>
         <metadata name="_width" value="130"/>
       </nodes>
@@ -278,25 +282,29 @@
         <metadata name="_height" value="56"/>
         <metadata name="_width" value="107"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef657" id="657" x="1501" y="555" succ="//@urndef/@specDiagrams.0/@connections.7" pred="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.12 //@urndef/@specDiagrams.0/@connections.13" def="656">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef657" id="657" x="1501" y="555" succ="//@urndef/@specDiagrams.0/@connections.7" pred="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.12 //@urndef/@specDiagrams.0/@connections.13 //@urndef/@specDiagrams.0/@connections.17" def="656">
         <metadata name="_height" value="65"/>
         <metadata name="_width" value="152"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef660" id="660" x="1377" y="727" succ="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.17" def="92">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef660" id="660" x="1340" y="724" succ="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.15" def="92">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef661" id="661" x="1559" y="727" succ="//@urndef/@specDiagrams.0/@connections.12" def="306">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef661" id="661" x="1506" y="731" succ="//@urndef/@specDiagrams.0/@connections.12" def="306">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef662" id="662" x="1724" y="729" succ="//@urndef/@specDiagrams.0/@connections.13" def="310">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef662" id="662" x="1665" y="731" succ="//@urndef/@specDiagrams.0/@connections.13" def="310">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef842" id="842" x="583" y="737" succ="//@urndef/@specDiagrams.0/@connections.18" def="72">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef842" id="842" x="583" y="737" succ="//@urndef/@specDiagrams.0/@connections.16" def="72">
         <metadata name="_height" value="60"/>
         <metadata name="_width" value="131"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef853" id="853" x="1802" y="725" succ="//@urndef/@specDiagrams.0/@connections.17" def="220">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
       </nodes>
       <connections xsi:type="grl:LinkRef" source="613" target="589" link="740">
         <label deltaX="15" deltaY="-39"/>
@@ -340,12 +348,6 @@
       <connections xsi:type="grl:LinkRef" source="662" target="657" link="830">
         <label deltaX="15" deltaY="-37"/>
       </connections>
-      <connections xsi:type="grl:LinkRef" source="621" target="603" link="831">
-        <label deltaX="15" deltaY="-39"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="623" target="603" link="832">
-        <label deltaX="13" deltaY="-31"/>
-      </connections>
       <connections xsi:type="grl:LinkRef" source="623" target="617" link="833">
         <label deltaX="10" deltaY="-41"/>
       </connections>
@@ -355,7 +357,10 @@
       <connections xsi:type="grl:LinkRef" source="842" target="651" link="843">
         <label deltaX="18" deltaY="-43"/>
       </connections>
-      <comments description="The municipality wants to keep their city clean, keep the people happy and keep the bussinesses happy. They must ensure that the recycling machines and materials are verified and conforms with the provinvial laws. &#xA;&#xA;The main goals of keeping everyone happy comes from keeping the city clean by promoting better recycling habits in the city and making sure it is done properly, recycling proper materials while&#xA; conforming to government regulations.&#xA;&#xA;The strategy C contributes most to the goals of the municipality. The reason for this is the given contribution factors of the two main goals; One keeping the people happy and two making sure everything conforms to provincial regulations.&#xA;Strategy C has a contribution of (100, 100) where as F has (75,100) and L has (100,0). This is why startegy C works best for Municipality.&#xA;" x="12" y="9" width="571" height="291" fillColor="255,255,200"/>
+      <connections xsi:type="grl:LinkRef" source="853" target="657" link="854">
+        <label deltaX="11" deltaY="-43"/>
+      </connections>
+      <comments description="The municipality wants to keep their city clean, keep the people happy and keep the bussinesses happy. &#xA;&#xA;The main goals of keeping everyone happy comes from keeping the city clean by promoting better recycling habits in the city and making sure it is done properly, recycling proper materials while&#xA;at the same time making it easy for people to recycle&#xA;&#xA;The strategy C contributes most to the goals of the municipality. The reason for this is the given contribution factors of the main goal for the municipality (keeping the people happy).&#xA;Strategy C has a contribution of 100 with the two sub goals (easy to recycle,keep city clean) at (100,100) where as F has -25 and L has 100 but with the subgoals being at (100,90). This is why startegy C works best for Municipality.&#xA;" x="12" y="9" width="524" height="243" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="fm:FeatureDiagram" name="Feature Model" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef168" id="168" x="380" y="351" succ="//@urndef/@specDiagrams.1/@connections.3" def="140">
