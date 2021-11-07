@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 2, 2021 at 1:51:51 PM EDT" specVersion="179" urnVersion="1.27" nextGlobalID="6693">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 7, 2021 at 1:10:45 PM EST" specVersion="180" urnVersion="1.27" nextGlobalID="6699">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="Use geolocation to locate services near you." id="4513" description="The feature &quot;Find services near me&quot; can utilize geolocation from the device used to access the application to quickly find recycling services near the individual. Geolocation is easy to use and quick for the user.">
@@ -234,6 +234,7 @@
       <metadata name="_numEval" value="75"/>
       <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
+    <actors name="Adults" id="6694" contRefs="6695"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory199" id="199" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="23" quantitativeContribution="50"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory201" id="201" refs="//@urndef/@specDiagrams.0/@connections.1" dest="15" src="25" quantitativeContribution="50"/>
     <links xsi:type="fm:OptionalFMLink" name="Optional213" id="213" refs="//@urndef/@specDiagrams.0/@connections.2" dest="144" src="146" quantitativeContribution="100"/>
@@ -525,82 +526,85 @@
       </connections>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="Adults" id="4912">
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4916" id="4916" x="427" y="247" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.6 //@urndef/@specDiagrams.1/@connections.10 //@urndef/@specDiagrams.1/@connections.15 //@urndef/@specDiagrams.1/@connections.16" def="4915">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4916" id="4916" x="422" y="441" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.6 //@urndef/@specDiagrams.1/@connections.10 //@urndef/@specDiagrams.1/@connections.15 //@urndef/@specDiagrams.1/@connections.16" def="4915">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="159"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4926" id="4926" x="1273" y="154" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3 //@urndef/@specDiagrams.1/@connections.20" def="4925">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4926" id="4926" x="1112" y="422" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3 //@urndef/@specDiagrams.1/@connections.20" def="4925">
         <metadata name="_height" value="73"/>
         <metadata name="_width" value="167"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4930" id="4930" x="351" y="68" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.1" def="4929">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4930" id="4930" x="368" y="295" contRef="6695" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.1" def="4929">
         <metadata name="_height" value="60"/>
         <metadata name="_width" value="150"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4946" id="4946" x="1062" y="334" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.7" def="4945">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4946" id="4946" x="894" y="538" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.7" def="4945">
         <metadata name="_height" value="63"/>
         <metadata name="_width" value="142"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4948" id="4948" x="1288" y="322" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.8 //@urndef/@specDiagrams.1/@connections.9 //@urndef/@specDiagrams.1/@connections.11" def="4947">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4948" id="4948" x="1145" y="541" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.8 //@urndef/@specDiagrams.1/@connections.9 //@urndef/@specDiagrams.1/@connections.11" def="4947">
         <metadata name="_height" value="57"/>
         <metadata name="_width" value="154"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4958" id="4958" x="240" y="244" succ="//@urndef/@specDiagrams.1/@connections.0" pred="//@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.12" def="4957">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4958" id="4958" x="199" y="469" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.0" pred="//@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.12" def="4957">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="129"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4974" id="4974" x="1148" y="39" pred="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.13 //@urndef/@specDiagrams.1/@connections.14" def="4973">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4974" id="4974" x="1004" y="253" contRef="6695" pred="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.13 //@urndef/@specDiagrams.1/@connections.14" def="4973">
         <metadata name="_height" value="56"/>
         <metadata name="_width" value="140"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4983" id="4983" x="1488" y="317" succ="//@urndef/@specDiagrams.1/@connections.20" pred="//@urndef/@specDiagrams.1/@connections.17 //@urndef/@specDiagrams.1/@connections.18 //@urndef/@specDiagrams.1/@connections.19" def="4982">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef4983" id="4983" x="1350" y="514" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.20" pred="//@urndef/@specDiagrams.1/@connections.17 //@urndef/@specDiagrams.1/@connections.18 //@urndef/@specDiagrams.1/@connections.19" def="4982">
         <metadata name="_height" value="74"/>
         <metadata name="_width" value="148"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5402" id="5402" x="707" y="578" succ="//@urndef/@specDiagrams.1/@connections.16" def="140">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5402" id="5402" x="647" y="674" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.16" def="140">
         <metadata name="_height" value="62"/>
         <metadata name="_width" value="122"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5620" id="5620" x="96" y="579" succ="//@urndef/@specDiagrams.1/@connections.5" def="116">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5620" id="5620" x="157" y="695" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.5" def="116">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5671" id="5671" x="1269" y="601" succ="//@urndef/@specDiagrams.1/@connections.10 //@urndef/@specDiagrams.1/@connections.17" def="94">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5671" id="5671" x="1120" y="679" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.10 //@urndef/@specDiagrams.1/@connections.17" def="94">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5730" id="5730" x="1600" y="605" succ="//@urndef/@specDiagrams.1/@connections.19" def="90">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5730" id="5730" x="1462" y="689" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.19" def="90">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5871" id="5871" x="1118" y="602" succ="//@urndef/@specDiagrams.1/@connections.9" def="102">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5871" id="5871" x="965" y="684" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.9" def="102">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5991" id="5991" x="959" y="602" succ="//@urndef/@specDiagrams.1/@connections.7 //@urndef/@specDiagrams.1/@connections.8" def="58">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef5991" id="5991" x="805" y="688" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.7 //@urndef/@specDiagrams.1/@connections.8" def="58">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6040" id="6040" x="1030" y="210" succ="//@urndef/@specDiagrams.1/@connections.13" def="76">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6040" id="6040" x="891" y="436" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.13" def="76">
         <metadata name="_height" value="63"/>
         <metadata name="_width" value="128"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6226" id="6226" x="343" y="586" succ="//@urndef/@specDiagrams.1/@connections.6 //@urndef/@specDiagrams.1/@connections.12" def="146">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6226" id="6226" x="341" y="698" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.6 //@urndef/@specDiagrams.1/@connections.12" def="146">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6320" id="6320" x="526" y="588" succ="//@urndef/@specDiagrams.1/@connections.15" def="136">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6320" id="6320" x="506" y="684" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.15" def="136">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6413" id="6413" x="1451" y="604" succ="//@urndef/@specDiagrams.1/@connections.11 //@urndef/@specDiagrams.1/@connections.18" def="92">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6413" id="6413" x="1291" y="685" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.11 //@urndef/@specDiagrams.1/@connections.18" def="92">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6632" id="6632" x="854" y="208" succ="//@urndef/@specDiagrams.1/@connections.14" def="39">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef6632" id="6632" x="689" y="454" contRef="6695" succ="//@urndef/@specDiagrams.1/@connections.14" def="39">
         <metadata name="_height" value="58"/>
         <metadata name="_width" value="130"/>
       </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef6695" id="6695" x="48" y="40" width="1652" height="1204" contDef="6694" nodes="5620 4958 5730 6226 6413 6320 5402 4983 5671 4930 4916 4974 5871 4926 4946 5991 6040 6632 4948">
+        <label deltaX="-754" deltaY="12"/>
+      </contRefs>
       <connections xsi:type="grl:LinkRef" source="4958" target="4930" link="4965">
         <label deltaX="30" deltaY="-30"/>
       </connections>
@@ -664,7 +668,7 @@
       <connections xsi:type="grl:LinkRef" source="4983" target="4926" link="6692">
         <label deltaX="30" deltaY="-30"/>
       </connections>
-      <comments description="The strategy C contribute the most to the goals of the adults. The reason for this is given the contribution factors and important of the 2 general goals: minimize the cost of recycling and accessibility to information, system C has the greatest value for the goals (100, 100) respectively. The other systems have values of (25, 49) and (100, 80) for systems F and L respectively. As such, system C is matches the goals of the adult population the most. &#xD;&#xA;&#xD;&#xA;The adult population want to minimize their expenses and minimize the time it takes for them to access recycling information. Adults are driven to maximize their time given their busy schedules all while saving money for other more important purchases. They can save money in two ways: by either receiving benefits or minimizing the cost of moving to a service (think gas, transportation tickets, etc.). Adults also want to save time which can be done by spending less time searching for what materials are recyclable, what services are available or what is the closest service to them.&#xD;&#xA;&#xD;&#xA;All in all, system C is the best system for these goals." x="31" y="-245" width="526" height="266" fillColor="255,255,200"/>
+      <comments description="The strategy C contribute the most to the goals of the adults. The reason for this is given the contribution factors and important of the 2 general goals: minimize the cost of recycling and accessibility to information, system C has the greatest value for the goals (100, 100) respectively. The other systems have values of (25, 49) and (100, 80) for systems F and L respectively. As such, system C is matches the goals of the adult population the most. &#xD;&#xA;&#xD;&#xA;The adult population want to minimize their expenses and minimize the time it takes for them to access recycling information. Adults are driven to maximize their time given their busy schedules all while saving money for other more important purchases. They can save money in two ways: by either receiving benefits or minimizing the cost of moving to a service (think gas, transportation tickets, etc.). Adults also want to save time which can be done by spending less time searching for what materials are recyclable, what services are available or what is the closest service to them.&#xD;&#xA;&#xD;&#xA;All in all, system C is the best system for these goals." x="41" y="-241" width="526" height="266" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Find services near an individual" id="3" description="The feature &quot;Services Near Me&quot; is used to find recycling services near an individual. This feature offers three ways to find these services: manually entering a postal code, scrolling on a map or using geolocation. This feature is important for the general public as it will allow them to quickly find recycling services near them.">
       <nodes xsi:type="ucm.map:StartPoint" name="An individual would like to find services near them" id="618" x="153" y="278" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
