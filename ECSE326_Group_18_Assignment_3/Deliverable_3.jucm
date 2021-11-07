@@ -1,202 +1,120 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 7, 2021 at 2:58:21 PM EST" specVersion="44" urnVersion="1.27" nextGlobalID="3317">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 7, 2021 at 5:27:47 PM EST" specVersion="54" urnVersion="1.27" nextGlobalID="4638">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
-      <scenarios name="ScenarioDef8" id="8"/>
+      <scenarios name="Unable_to_generate_report_because_of_login_fail" id="8">
+        <initializations value="false" variable="4634"/>
+        <initializations value="false" variable="4637"/>
+        <startPoints enabled="true" startPoint="3318"/>
+        <endPoints enabled="true" mandatory="true" endPoint="3320"/>
+      </scenarios>
+      <scenarios name="Successful_generate_report" id="4638">
+        <initializations value="true" variable="4634"/>
+        <initializations value="true" variable="4637"/>
+        <startPoints enabled="true" startPoint="3318"/>
+        <endPoints enabled="true" mandatory="true" endPoint="3320"/>
+      </scenarios>
     </scenarioGroups>
+    <variables name="login_failed" id="4634"/>
+    <variables name="service_not_exist" id="4637"/>
   </ucmspec>
   <grlspec>
-    <intElements xsi:type="fm:Feature" name="Recycling Information System" id="15" linksDest="199 201 292 359" type="Task" refs="170">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-    </intElements>
-    <intElements name="Task19" id="19" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
+    <intElements xsi:type="fm:Feature" name="Recycling Information System" id="15" linksDest="199 201 292 359" type="Task" refs="170"/>
+    <intElements name="Task19" id="19" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Business Management" id="23" linksDest="557 558 559" linksSrc="199" type="Task" decompositionType="Or" refs="187">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Public Front" id="25" linksDest="321 347 578 579 580" linksSrc="201" type="Task" refs="177">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Events Calendar" id="39" linksDest="586" linksSrc="578" type="Task" refs="172">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Notification" id="45" linksSrc="586 3291 3301" type="Task" refs="185 2520">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Business Calendar" id="49" linksDest="274 275" linksSrc="557 3290 3308" type="Task" decompositionType="Or" refs="174 912">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Guidlines" id="58" linksDest="361 388" linksSrc="347" type="Task" refs="181">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Geolocation" id="64" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements xsi:type="fm:Feature" name="Registration" id="68" linksDest="314 316" type="Task" refs="285">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-    </intElements>
+    <intElements xsi:type="fm:Feature" name="Geolocation" id="64" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Registration" id="68" linksDest="314 316" type="Task" refs="285"/>
     <intElements xsi:type="fm:Feature" name="Advertising" id="72" linksSrc="359" type="Task" refs="169">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="News" id="76" linksSrc="579 3298" type="Task" refs="178 2673">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Find Services" id="86" linksDest="323 325 326" linksSrc="321" type="Task" refs="189">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Search Service" id="90" linksSrc="323 3293" type="Task" refs="191 2258">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="List All Services" id="92" linksSrc="325 3295" type="Task" refs="171 2368">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Services Near Me" id="94" linksSrc="326 3297" type="Task" refs="186 2125">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Instructions" id="102" linksSrc="388 3287" type="Task" refs="383 3279">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Point Reward System" id="116" linksSrc="580 3299 3312" type="Task" refs="184 2850">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Collection Schedule" id="136" linksSrc="275 3289 3310" type="Task" refs="182 1616">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Business Hours" id="140" linksSrc="274 3292" type="Task" refs="168 1132">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Business Map" id="144" linksDest="213" linksSrc="559" type="Task" refs="175">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-    </intElements>
+    <intElements xsi:type="fm:Feature" name="Business Map" id="144" linksDest="213" linksSrc="559" type="Task" refs="175"/>
     <intElements xsi:type="fm:Feature" name="Drop Off Location" id="146" linksSrc="213 3296" type="Task" refs="188 1999">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Regulations" id="220" linksSrc="361 3286" type="Task" refs="221 3079">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Report Generation" id="245" linksSrc="558" type="Task" refs="246">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
+    <intElements xsi:type="fm:Feature" name="Report Generation" id="245" linksSrc="558" type="Task" refs="246"/>
     <intElements xsi:type="fm:Feature" name="Registration new" id="284" linksSrc="292" type="Task">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Business Registration New" id="286" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements xsi:type="fm:Feature" name="Public Registration new" id="288" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
+    <intElements xsi:type="fm:Feature" name="Business Registration New" id="286" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Public Registration new" id="288" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Business Registration" id="306" linksSrc="316" type="Task" refs="307">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20211107-145638815"/>
+      <metadata name="_autoSelected" value="20211107-170558167"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Public Registration" id="310" linksSrc="314" type="Task" refs="311">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Recycling Instructions s" id="367" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements xsi:type="fm:Feature" name="Feature376" id="376" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements xsi:type="fm:Feature" name="Feature382" id="382" type="Task">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements name="Easy to use" id="592" linksDest="618 619 3312" type="Goal" refs="593">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
-    <intElements name="Instructions for recycling" id="596" linksDest="3286 3287" linksSrc="618" type="Goal" refs="597">
+    <intElements xsi:type="fm:Feature" name="Recycling Instructions s" id="367" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Feature376" id="376" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Feature382" id="382" type="Task"/>
+    <intElements name="Easy to use" id="592" linksDest="618 619 3312" type="Goal" refs="593"/>
+    <intElements name="Simplify recycling process" id="596" linksDest="3286 3287" linksSrc="618" type="Goal" refs="597">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="View service information" id="598" linksDest="3292 3308 3310" linksSrc="620" type="Goal" refs="599">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="Finding service addresses" id="604" linksDest="3293 3295 3296 3297" linksSrc="621" type="Goal" refs="605">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="50"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="Provide easy access to services" id="608" linksDest="620 621" type="Goal" importance="High" importanceQuantitative="100" refs="609">
-      <metadata name="_numEval" value="50"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
+    <intElements name="Provide easy access to services" id="608" linksDest="620 621" type="Goal" importance="High" importanceQuantitative="100" refs="609"/>
     <intElements name="Reminder for recycling" id="614" linksDest="3289 3290 3291" linksSrc="619" type="Goal" refs="615">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements name="Minimum overwhelming" id="3280" linksDest="3298 3299 3301" type="Goal" refs="3281">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <actors name="Elders" id="588" contRefs="589">
-      <metadata name="_numEval" value="50"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </actors>
+    <intElements name="Minimum overwhelming" id="3280" linksDest="3298 3299 3301" type="Goal" refs="3281"/>
+    <actors name="Elders" id="588" contRefs="589"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory199" id="199" refs="//@urndef/@specDiagrams.2/@connections.0" dest="15" src="23" quantitativeContribution="50"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory201" id="201" refs="//@urndef/@specDiagrams.2/@connections.1" dest="15" src="25" quantitativeContribution="50"/>
     <links xsi:type="fm:OptionalFMLink" name="Optional213" id="213" refs="//@urndef/@specDiagrams.2/@connections.2" dest="144" src="146" quantitativeContribution="100"/>
@@ -327,6 +245,11 @@
     <featureModel/>
   </grlspec>
   <urndef>
+    <responsibilities name="Display the report" id="3909" respRefs="3910"/>
+    <responsibilities name="Select report generation" id="3923" respRefs="3924"/>
+    <responsibilities name="Choose the service to generate report for" id="4190" respRefs="4191"/>
+    <responsibilities name="User log in as a business owner" id="4381" respRefs="4382"/>
+    <responsibilities name="Choose format" id="4515"/>
     <specDiagrams xsi:type="grl:GRLGraph" name="GRLGraph2" id="2">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef593" id="593" x="414" y="60" contRef="589" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.1 //@urndef/@specDiagrams.0/@connections.19" def="592">
         <metadata name="_height" value="45"/>
@@ -469,7 +392,69 @@
       </connections>
       <comments description="The strategy L and strategy F are as good for the current stakeholder. Both have a satisfaction value of 125. At the same time, stategy C has the lowest satisfaction value (100) for this stakeholder.&#xD;&#xA;The reason why C scores a lower satisfaction value is that the point reward system and the news system, even they are useful for some other users, they are still overwhelming the elder ages groups. Additionally, the elder group doesn't need too many complicated features. Even a simple system like F is enought to fulfill most of their needs." x="1216" y="11" width="299" height="203" fillColor="255,255,200"/>
     </specDiagrams>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap3" id="3"/>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="User_wants_to_generate_report" id="3">
+      <nodes xsi:type="ucm.map:StartPoint" name="User wants to generate a report for the recycling service" id="3318" x="165" y="126" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
+        <metadata name="_hits" value="1"/>
+        <label deltaX="6" deltaY="8"/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Report generated" id="3320" x="1449" y="230" pred="//@urndef/@specDiagrams.1/@connections.4" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@endPoints.0">
+        <metadata name="_hits" value="1"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow3888" id="3888" x="356" y="136" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow3889" id="3889" x="536" y="144" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.7">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow3890" id="3890" x="925" y="169" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.5">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow3893" id="3893" x="1292" y="222" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.6">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:Stub" name="Generate Report" id="3895" x="676" y="164" contRef="3902" succ="//@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.8" pred="//@urndef/@specDiagrams.1/@connections.2">
+        <metadata name="_hits" value="1"/>
+        <label/>
+        <bindings plugin="4016">
+          <in startPoint="4017" stubEntry="//@urndef/@specDiagrams.1/@connections.2"/>
+          <out endPoint="4019" stubExit="//@urndef/@specDiagrams.1/@connections.5"/>
+          <out endPoint="4201" stubExit="//@urndef/@specDiagrams.1/@connections.8"/>
+          <precondition label="" expression="true"/>
+        </bindings>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef3910" id="3910" x="1128" y="201" succ="//@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.3" respDef="3909">
+        <metadata name="_hits" value="1"/>
+        <label deltaX="-20" deltaY="-37"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef3924" id="3924" x="440" y="138" succ="//@urndef/@specDiagrams.1/@connections.7" pred="//@urndef/@specDiagrams.1/@connections.1" respDef="3923">
+        <metadata name="_hits" value="1"/>
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint4598" id="4598" x="734" y="407" succ="//@urndef/@specDiagrams.1/@connections.9" pred="//@urndef/@specDiagrams.1/@connections.8">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Report not generated" id="4599" x="962" y="422" pred="//@urndef/@specDiagrams.1/@connections.9">
+        <metadata name="_hits" value="0"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef3902" id="3902" x="607" y="80" width="218" height="154" contDef="3901" nodes="3895">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="3318" target="3888"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3888" target="3924"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3889" target="3895" inBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@in.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3890" target="3910"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3893" target="3320"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3895" target="3890" outBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@out.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3910" target="3893"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3924" target="3889"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3895" target="4598" outBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@out.1"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4598" target="4599"/>
+    </specDiagrams>
     <specDiagrams xsi:type="fm:FeatureDiagram" name="FeatureDiagram4" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef168" id="168" x="380" y="351" succ="//@urndef/@specDiagrams.2/@connections.3" def="140">
         <metadata name="_height" value="45"/>
@@ -623,6 +608,93 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="Report_generation_stub" id="4016" parentStub="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="User tries to generate the report" id="4017" x="88" y="207" succ="//@urndef/@specDiagrams.3/@connections.0" inBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@in.0">
+        <metadata name="_hits" value="1"/>
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Able to generate" id="4019" x="1125" y="212" pred="//@urndef/@specDiagrams.3/@connections.9" outBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@out.0">
+        <metadata name="_hits" value="1"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork4126" id="4126" x="704" y="208" succ="//@urndef/@specDiagrams.3/@connections.1 //@urndef/@specDiagrams.3/@connections.2" pred="//@urndef/@specDiagrams.3/@connections.6">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint4127" id="4127" x="742" y="64" succ="//@urndef/@specDiagrams.3/@connections.3" pred="//@urndef/@specDiagrams.3/@connections.14">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4185" id="4185" x="208" y="208" succ="//@urndef/@specDiagrams.3/@connections.4" pred="//@urndef/@specDiagrams.3/@connections.0">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef4191" id="4191" x="577" y="203" succ="//@urndef/@specDiagrams.3/@connections.5" pred="//@urndef/@specDiagrams.3/@connections.11" respDef="4190">
+        <metadata name="_hits" value="1"/>
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Unable to generate" id="4201" x="1089" y="73" pred="//@urndef/@specDiagrams.3/@connections.8" outBindings="//@urndef/@specDiagrams.1/@nodes.6/@bindings.0/@out.1">
+        <metadata name="_hits" value="0"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4364" id="4364" x="659" y="206" succ="//@urndef/@specDiagrams.3/@connections.6" pred="//@urndef/@specDiagrams.3/@connections.5">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4365" id="4365" x="699" y="131" succ="//@urndef/@specDiagrams.3/@connections.7" pred="//@urndef/@specDiagrams.3/@connections.2">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4367" id="4367" x="1018" y="73" succ="//@urndef/@specDiagrams.3/@connections.8" pred="//@urndef/@specDiagrams.3/@connections.3">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4369" id="4369" x="842" y="213" succ="//@urndef/@specDiagrams.3/@connections.9" pred="//@urndef/@specDiagrams.3/@connections.1">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef4382" id="4382" x="330" y="209" succ="//@urndef/@specDiagrams.3/@connections.10" pred="//@urndef/@specDiagrams.3/@connections.4" respDef="4381">
+        <metadata name="_hits" value="1"/>
+        <label deltaX="33" deltaY="-37"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork4402" id="4402" x="391" y="210" succ="//@urndef/@specDiagrams.3/@connections.11 //@urndef/@specDiagrams.3/@connections.12" pred="//@urndef/@specDiagrams.3/@connections.10">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint4403" id="4403" x="421" y="71" succ="//@urndef/@specDiagrams.3/@connections.13" pred="//@urndef/@specDiagrams.3/@connections.15">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin4478" id="4478" x="694" y="92" succ="//@urndef/@specDiagrams.3/@connections.14" pred="//@urndef/@specDiagrams.3/@connections.7 //@urndef/@specDiagrams.3/@connections.16">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4479" id="4479" x="381" y="105" succ="//@urndef/@specDiagrams.3/@connections.15" pred="//@urndef/@specDiagrams.3/@connections.12">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow4480" id="4480" x="588" y="83" succ="//@urndef/@specDiagrams.3/@connections.16" pred="//@urndef/@specDiagrams.3/@connections.13">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <connections xsi:type="ucm.map:NodeConnection" source="4017" target="4185"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4126" target="4369">
+        <condition deltaX="33" deltaY="-1" label="Service exist and current user is the owner of the service" expression="service_not_exist=true" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="4126" target="4365">
+        <condition deltaX="-2" deltaY="34" label="Service not exist or current user is not the owner of the service" expression="service_not_exist=false" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="4127" target="4367"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4185" target="4382"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4191" target="4364"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4364" target="4126"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4365" target="4478"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4367" target="4201"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4369" target="4019"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4382" target="4402"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4402" target="4191">
+        <condition deltaX="62" deltaY="-1" label="Log in successed" expression="login_failed = true" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="4402" target="4479">
+        <condition deltaX="94" deltaY="5" label="Log in cancelled / Log in failed" expression="login_failed = false" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="4403" target="4480"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4478" target="4127"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4479" target="4403"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="4480" target="4478"/>
+    </specDiagrams>
+    <components name="Report generation" id="3901" contRefs="3902"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
   <dynamicContexts name="DynamicContext14" id="14" groups="13"/>
