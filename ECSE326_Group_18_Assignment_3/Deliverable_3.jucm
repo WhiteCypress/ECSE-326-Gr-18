@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 7, 2021 at 4:43:29 PM EST" specVersion="63" urnVersion="1.27" nextGlobalID="3230">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 8, 2021 at 2:16:14 PM EST" specVersion="70" urnVersion="1.27" nextGlobalID="3243">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
-      <scenarios name="ScenarioDef8" id="8"/>
+      <scenarios name="Specific Product Found" id="8" description="Searching for a specific product's recycling instructions in the app's database. The product is found and specific instructions are returned.">
+        <initializations value="true" variable="3231"/>
+        <initializations value="true" variable="3241"/>
+        <startPoints enabled="true" startPoint="2678"/>
+        <endPoints enabled="true" mandatory="true" endPoint="2680"/>
+      </scenarios>
+      <scenarios name="Specific Product Not Found" id="3243" description="Searching for a specific product's recycling instructions in the app's database. The product is not found, an error is shown, and generic instructions are returned.">
+        <initializations value="true" variable="3231"/>
+        <initializations value="false" variable="3241"/>
+        <startPoints enabled="true" startPoint="2678"/>
+        <endPoints enabled="true" mandatory="true" endPoint="2799"/>
+      </scenarios>
     </scenarioGroups>
+    <variables name="search_specific" id="3231"/>
+    <variables name="product_found" id="3241"/>
   </ucmspec>
   <grlspec>
     <intElements xsi:type="fm:Feature" name="Recycling Information System" id="15" linksDest="199 201 292 359" type="Task" refs="170"/>
     <intElements name="Task19" id="19" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Business Management" id="23" linksDest="557 558 559" linksSrc="199" type="Task" decompositionType="Or" refs="187">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Public Front" id="25" linksDest="321 347 578 579 580" linksSrc="201" type="Task" refs="177">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Events Calendar" id="39" linksDest="586" linksSrc="578" type="Task" refs="172">
       <metadata name="_addAggregate" value="disable"/>
@@ -26,7 +39,7 @@
     <intElements xsi:type="fm:Feature" name="Business Calendar" id="49" linksDest="274 275" linksSrc="557" type="Task" decompositionType="Or" refs="174"/>
     <intElements xsi:type="fm:Feature" name="Recycling Guidlines" id="58" linksDest="361 388" linksSrc="347 2519" type="Task" refs="181 912">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Geolocation" id="64" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Registration" id="68" linksDest="314 316" type="Task" refs="285"/>
@@ -41,7 +54,7 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Search Service" id="90" linksSrc="323 2516 2564 2565" type="Task" refs="191 1079">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="List All Services" id="92" linksSrc="325 2518 2568 2569" type="Task" refs="171 2202">
       <metadata name="_addAggregate" value="disable"/>
@@ -50,7 +63,7 @@
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Instructions" id="102" linksSrc="388" type="Task" refs="383">
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Point Reward System" id="116" linksSrc="580 2557" type="Task" refs="184 2505">
       <metadata name="_addAggregate" value="disable"/>
@@ -64,7 +77,7 @@
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Regulations" id="220" linksSrc="361 2520" type="Task" refs="221 1008">
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Report Generation" id="245" linksSrc="558" type="Task" refs="246"/>
     <intElements xsi:type="fm:Feature" name="Registration new" id="284" linksSrc="292" type="Task">
@@ -74,7 +87,7 @@
     <intElements xsi:type="fm:Feature" name="Public Registration new" id="288" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Business Registration" id="306" linksSrc="316" type="Task" refs="307">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20211107-145622833"/>
+      <metadata name="_autoSelected" value="20211108-140728526"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Public Registration" id="310" linksSrc="314" type="Task" refs="311">
       <metadata name="_addAggregate" value="disable"/>
@@ -271,7 +284,7 @@
         <label/>
       </nodes>
       <nodes xsi:type="ucm.map:OrFork" name="OrFork2731" id="2731" x="482" y="252" succ="//@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.1"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Redirect to General Guidleines" id="2733" x="797" y="371" pred="//@urndef/@specDiagrams.1/@connections.4">
+      <nodes xsi:type="ucm.map:EndPoint" name="Redirect to General Guidleines" id="2733" x="797" y="371" pred="//@urndef/@specDiagrams.1/@connections.4" outBindings="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0/@out.1">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -287,19 +300,19 @@
       <connections xsi:type="ucm.map:NodeConnection" source="2707" target="2730"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2730" target="2731"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2731" target="2708">
-        <condition label="product found" expression="true" description=""/>
+        <condition label="product found" expression="product_found = true" description=""/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="2731" target="2739">
-        <condition deltaX="88" deltaY="43" label="product not found" expression="true" description=""/>
+        <condition deltaX="88" deltaY="43" label="product not found" expression="product_found = false" description=""/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="2739" target="2733"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Recycling Instructions" id="2677">
-      <nodes xsi:type="ucm.map:StartPoint" name="Looking for recycling information" id="2678" x="146" y="252" succ="//@urndef/@specDiagrams.2/@connections.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="Looking for recycling information" id="2678" x="146" y="252" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="Relevant information found" id="2680" x="812" y="260" pred="//@urndef/@specDiagrams.2/@connections.1">
+      <nodes xsi:type="ucm.map:EndPoint" name="Relevant information found" id="2680" x="812" y="260" pred="//@urndef/@specDiagrams.2/@connections.1" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -308,10 +321,11 @@
         <bindings plugin="2705">
           <in startPoint="2707" stubEntry="//@urndef/@specDiagrams.2/@connections.4"/>
           <out endPoint="2708" stubExit="//@urndef/@specDiagrams.2/@connections.1"/>
+          <out endPoint="2733" stubExit="//@urndef/@specDiagrams.2/@connections.2"/>
           <precondition label="" expression="true"/>
         </bindings>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="General Guidelines Found" id="2799" x="872" y="442" pred="//@urndef/@specDiagrams.2/@connections.3">
+      <nodes xsi:type="ucm.map:EndPoint" name="General Guidelines Found" id="2799" x="872" y="442" pred="//@urndef/@specDiagrams.2/@connections.3" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.1/@endPoints.0">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -334,17 +348,16 @@
       </contRefs>
       <connections xsi:type="ucm.map:NodeConnection" source="2678" target="2943"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2712" target="2680" outBindings="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0/@out.0"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2712" target="3139"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="2712" target="3139" outBindings="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0/@out.1"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2862" target="2799" outBindings="//@urndef/@specDiagrams.2/@nodes.4/@bindings.0/@out.0"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2943" target="2712" inBindings="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0/@in.0">
-        <condition deltaX="162" deltaY="-13" label="search product specific instructions" expression="true" description=""/>
+        <condition deltaX="162" deltaY="-13" label="search product specific instructions" expression="search_specific = true" description=""/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="2943" target="3095">
-        <condition label="search general instructions" expression="true" description=""/>
+        <condition label="search general instructions" expression="search_specific = false" description=""/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="3095" target="3139"/>
       <connections xsi:type="ucm.map:NodeConnection" source="3139" target="2862" inBindings="//@urndef/@specDiagrams.2/@nodes.4/@bindings.0/@in.0"/>
-      <comments description="Work left: &#xD;&#xA;- Link inputs and outputs of stubs&#xD;&#xA;- Evaluate paths" x="130" y="70" width="140" height="108" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Student" id="588">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef590" id="590" x="412" y="204" succ="//@urndef/@specDiagrams.3/@connections.0" pred="//@urndef/@specDiagrams.3/@connections.15 //@urndef/@specDiagrams.3/@connections.17 //@urndef/@specDiagrams.3/@connections.19 //@urndef/@specDiagrams.3/@connections.20 //@urndef/@specDiagrams.3/@connections.21 //@urndef/@specDiagrams.3/@connections.23" def="589">
@@ -483,7 +496,7 @@
       </connections>
       <comments description="C has the best feature selection for the current stakeholder because it incorporates a higher amount of relevant features than solution F and includes a point based reward system that puts it slightly above solution L (in terms of money saved)." x="1415" y="410" width="298" height="113" fillColor="255,255,200"/>
     </specDiagrams>
-    <specDiagrams xsi:type="fm:FeatureDiagram" name="FeatureDiagram4" id="4">
+    <specDiagrams xsi:type="fm:FeatureDiagram" name="FeatureDiagram" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef168" id="168" x="380" y="351" succ="//@urndef/@specDiagrams.4/@connections.3" def="140">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
@@ -636,8 +649,6 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
-    <specDiagrams xsi:type="grl:GRLGraph" name="GRLGraph2" id="2"/>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap3" id="3"/>
     <components name="Recycling Instructions" id="2719" contRefs="2720 2751"/>
     <components name="Search System" id="2740" contRefs="2741"/>
     <components name="Component2750" id="2750"/>
