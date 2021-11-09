@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 7, 2021 at 5:27:47 PM EST" specVersion="54" urnVersion="1.27" nextGlobalID="4638">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 8, 2021 at 7:11:13 PM EST" specVersion="55" urnVersion="1.27" nextGlobalID="4639">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
-      <scenarios name="Unable_to_generate_report_because_of_login_fail" id="8">
+      <scenarios name="Unable_to_generate_report_because_of_login_fail" id="8" description="In this scenario, the user is unable to generate a report, because the user is not able to log in to an account.">
         <initializations value="false" variable="4634"/>
         <initializations value="false" variable="4637"/>
         <startPoints enabled="true" startPoint="3318"/>
         <endPoints enabled="true" mandatory="true" endPoint="3320"/>
       </scenarios>
-      <scenarios name="Successful_generate_report" id="4638">
+      <scenarios name="Successful_generate_report" id="4638" description="In this scenario, the user provided all the necessary information, and the report is generated successfully.">
         <initializations value="true" variable="4634"/>
         <initializations value="true" variable="4637"/>
         <startPoints enabled="true" startPoint="3318"/>
@@ -250,7 +250,7 @@
     <responsibilities name="Choose the service to generate report for" id="4190" respRefs="4191"/>
     <responsibilities name="User log in as a business owner" id="4381" respRefs="4382"/>
     <responsibilities name="Choose format" id="4515"/>
-    <specDiagrams xsi:type="grl:GRLGraph" name="GRLGraph2" id="2">
+    <specDiagrams xsi:type="grl:GRLGraph" name="Goal_diagram_elders" id="2">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef593" id="593" x="414" y="60" contRef="589" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.1 //@urndef/@specDiagrams.0/@connections.19" def="592">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
