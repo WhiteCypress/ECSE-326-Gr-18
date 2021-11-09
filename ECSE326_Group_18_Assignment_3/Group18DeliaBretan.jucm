@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 8, 2021 at 9:42:17 PM EST" specVersion="70" urnVersion="1.27" nextGlobalID="3809">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="s5294" created="October 29, 2021 at 9:23:45 AM EDT" modified="November 8, 2021 at 9:47:19 PM EST" specVersion="71" urnVersion="1.27" nextGlobalID="3809">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="Service_name_found" id="8">
@@ -36,18 +36,18 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Events Calendar" id="39" linksDest="586" linksSrc="578 2112" type="Task" refs="172 2110">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Notification" id="45" linksSrc="586" type="Task" refs="185">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Business Calendar" id="49" linksDest="274 275" linksSrc="557 2530 2976" type="Task" decompositionType="Or" refs="174 2348">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Guidlines" id="58" linksDest="361 388" linksSrc="347 3647" type="Task" refs="181 3646">
       <metadata name="_addAggregate" value="disable"/>
@@ -64,8 +64,8 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Advertising" id="72" linksSrc="359 2111" type="Task" refs="169 1992">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="News" id="76" linksSrc="579 2967" type="Task" refs="178 2966">
       <metadata name="_addAggregate" value="disable"/>
@@ -74,13 +74,13 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Find Services" id="86" linksDest="323 325 326" linksSrc="321" type="Task" refs="189">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Search Service" id="90" linksSrc="323" type="Task" refs="191">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="List All Services" id="92" linksSrc="325 2979 3115" type="Task" refs="171 3110">
       <metadata name="_addAggregate" value="disable"/>
@@ -89,8 +89,8 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Services Near Me" id="94" linksSrc="326 2690 3117" type="Task" refs="186 2689">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Instructions" id="102" linksSrc="388 3649" type="Task" refs="383 3503">
       <metadata name="_addAggregate" value="disable"/>
@@ -104,23 +104,23 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Collection Schedule" id="136" linksSrc="275 2532 2974" type="Task" refs="182 2524">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Business Hours" id="140" linksSrc="274 2531 2975" type="Task" refs="168 2428">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Business Map" id="144" linksDest="213" linksSrc="559 2525 2978" type="Task" refs="175 2215">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Drop Off Location" id="146" linksSrc="213 2526 2977" type="Task" refs="188 2288">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling Regulations" id="220" linksSrc="361 3648" type="Task" refs="221 3585">
       <metadata name="_addAggregate" value="disable"/>
@@ -128,8 +128,8 @@
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Report Generation" id="245" linksSrc="558" type="Task" refs="246">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Registration new" id="284" linksSrc="292" type="Task">
       <metadata name="_addAggregate" value="disable"/>
@@ -171,23 +171,23 @@
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Maximizing interactions between recycling business owners and the public" id="725" linksDest="2692 2693" type="Goal" refs="726">
-      <metadata name="_numEval" value="18"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Minimize time spent searching for nearest services" id="1757" linksDest="2525 2526 2690 3115" linksSrc="2528" type="Goal" refs="1758">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Maximize public awareness of local events" id="1767" linksDest="2111 2112" linksSrc="2692" type="Goal" refs="1768">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="Maximize public awareness of local events" id="1767" linksDest="2111 2112" linksSrc="2692" type="Goal" refs="1768">
-      <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
     <intElements name="Minimize time spent searching for service details" id="2118" linksDest="2528 2530 2531 2532" linksSrc="2693" type="Goal" refs="2119">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="25"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Maximize public knowledge of up-to-date recycling guidelines" id="2695" linksDest="2967 3647 3648 3649" linksSrc="3112" type="Goal" decompositionType="Or" refs="2696">
       <metadata name="_addAggregate" value="disable"/>
@@ -703,7 +703,7 @@
       <connections xsi:type="grl:LinkRef" source="3503" target="2696" link="3649">
         <label deltaX="30" deltaY="-30"/>
       </connections>
-      <comments description="Systems C and L contribute the maximal amount (100,100) to the goals of the CFS. Other than the fact that the system L requires fewer features to be implemented in order to reach the goals, both systems focus significantly on access to information and the interactions between recycling business owners and the general public. It is thus recommended that the CFS starts by testing a system akin to L before adding more features and reaching the equivalent of system C.&#xA;&#xA;System F has a value of (18, 100), which makes it outstanding in terms of a pure information system, but quite impractical as it lacks many features related to services." x="241" y="47" width="981" height="190" fillColor="255,255,200"/>
+      <comments description="Systems C and L contribute the maximal amount (100,100) to the goals of the CFS. Other than the fact that the system L requires fewer features to be implemented in order to reach the goals, both systems focus significantly on access to information and the interactions between recycling business owners and the general public. It is thus recommended that the CFS starts by testing a system akin to L before adding more features and reaching the equivalent of system C.&#xD;&#xA;&#xD;&#xA;System F has a value of (18, 100), which makes it outstanding in terms of a pure information system (since that goal has a value of 100), but quite impractical as it lacks many features related to services (and thus a goal score of 18)." x="241" y="47" width="981" height="190" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="User_searches_service_via_name" id="3">
       <nodes xsi:type="ucm.map:StartPoint" name="User wishes to search for a service" id="3651" x="483" y="393" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
